@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head><title>HTML FORMS (Lesson 3 by Net Ninja)</title></head>
+<body>
+    <h1>HTML Forms</h1>
+<form> 
+    <label for="username">Enter username:</label>
+    <!--The label tag shows the visible text before the input field-->
+<input type="text" id="username" name="username" placeholder="your username">
+<!--id name has to be unique. We can add that attibute to any tag-->
+<br> <br>
+<label for="email">Enter your e-mail:</label>
+<input type="email" id="email" name="email" placeholder="your e-mail">
+<br><br>
+<label for="password">Enter your password:</label>
+<input type="password" id="password" name="password" placeholder="your password">
+
+
+<br> <h2>Radio Forms</h2>
+
+    <p>Please select your gender:</p>   
+<input type="radio" name="gender" value="male"> Male <br>
+<input type="radio" name="gender" value="female"> Female <br>
+<input type="radio" name="gender" value="other"> Other
+<!--User must choose only 1 of the 3 options in this form. 
+    Therefore the name has to be the same for the 3 input fields.
+The name attribute is very imp for radio forms-->
+<!-- We add a value attribute because the user doesnt input a value. 
+    The user only selects 1 option. Therefore we have to inform the server 
+    about what info the user has selected  -->
+
+    <p>Select your age:</p> 
+
+    <input type="radio" name="age" value="0-25" id="option1">
+    <label for="option1">0-25</label>
+    <input type="radio" name="age" value="26-50" id="option2">
+    <label for="option2">26-50</label>
+    <input type="radio" name="age" value="51+"  id="option3">
+    <label for="option3">51+</label>
+    <!--the value attibute is for the server. PHP will use that info-->
+
+<br>
+<h2>Drop-down forms</h2>
+
+<label for="question">Security question:</label>
+<select name="question" id="question">
+    <option value="q1">What is your favourite colour?</option>
+    <option value="q2">What is your favourite cousin's name?</option>
+    <option value="q3">What is your favourite country?</option>
+</select>
+    <br><br>
+<label for="answer">Security question answer:</label>  
+<input type="text" name="answer" id="answer"> 
+  
+
+<br> <br>
+<h2>Textarea forms (for comments...)</h2>
+
+    <label for="bio">Your bio:</label> <br>
+    <textarea name="bio" id="bio" cols="30" rows="10" placeholder="about you..."></textarea>
+    <!--Textarea tag allows to create bigger boxes to input text. 
+    It also allows the user to expand the text box.-->
+    <!--Placeholder attribute only shows its text while the text box is empty.
+    You can add it to other input types (username, email, password...). -->
+    
+    <!--TIP: If you keep pressing ALT while you click on several places, 
+    VSCODE allows you to type the same text in those places at the same time.-->
+
+<h2>Submit button</h2> 
+<input type="submit" value="Submit the form">
+<!--The value attribute includes the text we will see inside the button-->
+</form>
+
+<!-- -->
+</body>
+
+
+
+</html>
