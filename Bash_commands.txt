@@ -1,0 +1,41 @@
+BEGINNER'S GUIDE TO THE BASH TERMINAL (11082020)
+
+my username@computer name: $ means that I am a standar user (no privilegies)
+ls - list storage
+pwd: print present working directory (where I am = /home/lusancal)
+ls -a : lists all the files including the hiden files (.document)
+ls -l: long list of files with more info about each element
+
+cd Documents/ : change directory. Move to the folder called Documents
+cd : takes you to the home directory
+cd .. : moves 1 folder up
+
+pushd /Downloads : to move to the Downloads directory
+popd: to go back to the last directory that we were before. We do not need to remember where we were before.
+
+Linux does not need that we type the extensions
+file .face shows what type of file is the .face doc is. Ex. JPG image
+
+TO FIND FILES:
+locate asig : It shows all the file names with that string.
+
+which cal: finds other commands for me, ex. cal. It shows it is installed and
+where it is.  ex. /usr/bin/cal
+If we then type cal and Enter we will run the command and we will see this month's
+calendar on the screen.
+
+HISTORY: shows all the commands that I have used. 
+1st option: up arrow
+2nd option: history + ENTER
+
+HELP:
+whatis cal: shows what a commands does.
+lusancal@ATLANTIDA:~$ whatis cal
+cal (1)              - displays a calendar and the date of Easter
+
+apropos time : if we do not know what command ot use to make something
+ related to time. It shows lots of differnt commands related to time
+
+man man:  man - an interface to the system reference manuals
++++minute 25+++
+
