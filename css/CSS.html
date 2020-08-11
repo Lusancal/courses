@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head><title>CSS (Style Sheets)</title> 
+<style>
+    h1 {
+        color: blueviolet;
+        text-align: center;
+    }
+    h2 {
+        color: #ff00d4;
+        border: 2px solid #911480;
+        text-align: center;
+        margin: 20px;
+        padding: 20px;
+    }
+    p {
+        font-size: 20px;
+        color: rgb(8, 8, 34);
+        text-align: left;
+    }
+
+    .columns{
+        column-count: 3;
+        column-gap: 30px;
+    }
+
+    strong.purple{
+        color: rgb(98, 18, 114);
+        /* several elements have the class purple. Therefore I am saying that only the selectors strong with that class will have these features.*/
+    }
+    .purple.green{
+        color: rgb(64, 102, 8);
+        background-color: yellow;
+        }
+    li {
+        list-style-type: square;
+        font-size: 20px;
+    }
+    a{
+        display: block;
+    }
+    div{
+        font-size: 22px;
+        background-color: rgb(209, 142, 170);
+        border: 4px rgb(133, 12, 123) dashed;
+        text-shadow: 2px 2px rgb(170, 168, 168);
+    }
+    span{
+        font-size: 20px;
+        border: 2px solid #911480;
+        margin: 30px;
+        padding: 10px;
+        display: inline-block;
+        
+    }
+    #background{
+        border: 4px dotted rgb(133, 12, 123);
+        background-color: rgb(236, 236, 172);
+        text-shadow: none;
+    }
+    div li {
+        background-color: rgb(216, 167, 228);
+        list-style-type: disc;
+    }
+    div li strong{
+        color: rgb(138, 58, 204);
+    }
+    a[href="https://www.w3schools.com/cssref/css_websafe_fonts.asp"]{
+        color: lawngreen;
+        background-color: olivedrab;
+    }
+    a[href*="colors"]{
+        color: orangered;
+        background-color: rgb(228, 172, 117);
+    }
+    a[href$=".asp"]{
+        border: 3px solid rgb(210, 116, 223);
+    }
+    .URL2{
+      display: inline-block;  
+    }
+
+</style></head>
+<body>
+    <h1>CSS (Style Sheets)</h1>
+    <h2>Estructure</h2>
+        <p>selectors: div, li...</p>
+        <p>declarations: color: red; font-size: bold;...</p>
+        <p>Estructure: selector {declaration ; declaration;}</p>
+
+    <h2>Types of CSS</h2>
+        <ol>
+            <li><strong>CSS inside HTML page:</strong>  style tag inside the head and all the selectors and declarations 
+                inside those tags.
+            </li>
+            
+            <li><strong>External CSS file:</strong>  new file with .css extension, ie. styles.css and we link that file to the HTML pages. ML pages. We use t
+                We use the link tag in the HTML page with the relative path to that HTML pages.
+                The structure of that tag is: link rel="stylesheet" href="css/styles.css" 
+            
+            </li>
+        </ol>
+        <h2>Types of declarations</h2>
+        <ul>
+            <li>color: brown;</li>
+            <li> font-size: 30px;</li>
+            <li>background-color: gold;</li>
+            <li>text-decoration: underline; (subrallado)  o line-through (tachado) o none (para eliminar caracteristicas por defecto ej. linea de los enlaces)  </li>
+            <li>font-family: Arial, Helvetica, sans-serif; 
+                (It should hold several font names because if the browser does not support
+                 the first font, it tries the next font. For more info: <a href="https://www.w3schools.com/cssref/css_websafe_fonts.asp">W3schools CSS Web Safe Font Combinations</a> )</li>
+            <li>text-align: center / right / left;</li>
+            <li>column-count: 3; (To divide the text in 3 columns) </li>
+            <li>column-gap: 40px;</li>
+            <li>border: 4px red solid; (to add borders. It includes border-width, border-style and border-color </li>
+            <li>/*  */ : to add comments.</li>
+            <li>list-style-type: square / none; (to have square list symbols instead of the deffault discs or hide them) </li>
+             <li>text-shadow: 2px 5px grey; (horizontal vertical colour)</li>   
+
+        </ul>
+
+
+        <div> <strong>TIP:</strong> It's important to use <em> <strong>Web safe fonts</strong> </em> to make sure that all users can see the same font in their browsers. 
+        
+        </div>
+        <p class="columns">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In id leo sit amet 
+            libero maximus sodales. Aliquam rutrum est ut hendrerit iaculis. Phasellus 
+            aliquet tellus in est fermentum, sed efficitur neque varius. Nulla diam ex, 
+            pulvinar vel laoreet nec, iaculis vel massa. In mi diam, volutpat in felis in, 
+            mollis egestas tortor. Vivamus est ante, consequat at mollis blandit, iaculis 
+            at elit. Vestibulum id iaculis augue. Cras magna diam, ultricies sit amet alique
+            a, fermentum et justo. Duis vel cursus orci. Sed vel posuere nunc. Nunc quis ligula 
+            vel nisi mollis rhoncus vitae nec ipsum. Pellentesque nunc nisl, pulvinar sit amet 
+            pharetra in, congue posuere nibh. Duis ac massa at lectus pharetra pharetra.</p>
+        
+<h2>Colours / Hex Codes</h2>
+<p>#ff00d4 (2 for R, 2 for G, 2 for B. Minimum is 0 and maximum is F). For more info: <a href="https://www.w3schools.com/colors/colors_hexadecimal.asp">w3schools Colors Hex</a> </p>
+
+<h2>Inline elements & Block-level elements</h2>
+<ul><li>Inline elements: only use the space that they need ie. span, em, strong, a...</li>
+<li>Block-level elements: each one starts in a new line ie. div, p, h1 to h6, ul, li...</li>
+</ul>
+<div><strong class="purple">TIPS:</strong> We can transform an inline element into a block-level element and viceversa with the CSS <em>display</em> 
+    declarator. The inline-block property has the best of both worlds for inline elements (inline element with the margin if block-level elements.<br>
+Margin (space outsidehttps://www.w3schools.com/cssref/css_websafe_fonts.asp a box or border) only add space on left and right hand-side for inline elements. It also add spaces on top and bottom for block-level elements. <br>
+Padding (space inside the border) works the same way for both. It surounds all the element.</div>
+<h2>Default browser styles</h2>
+<span class="purple green">User agent stylesheet is the browser default rules. We can override them.</span>
+<h2>CSS Classes & Selectors</h2>
+<p>If we add the attribute <em>class</em> to any HTML tag we can style it with CSS. The syntax in CSS is .classname{}. We can add the = class to different types of elements. 
+    Therefore if we only want to apply it ot 1 type we type: strong.purple. We can also 2 two classes to a selector and the systax in CSS 
+is p.purple.green  </p>
+<div id="background"><strong>IDs: We may use <em>id</em> instead of <em>class</em> to hook elements but since they are unique for 1 element, it's better to use the class attibute.
+We will need <em>id</em> attibutes for JavaScript. If we want to use id in HTML, the systax is <em>p id="background"</em> and it is #background or p#background in CSS.</div>
+<h2>Descendants</h2>
+<div>
+<p>We can add style to the descendats of a element (elements inside that element)  in CSS. 
+    The systaxis is: </p>
+    <ul>
+        <li><strong>div p</strong>: to style all the p tags inside div elements. </li>
+        <li><strong>div .purple</strong>: to style the elements with the purple class inside divs.</li>
+    </ul>
+</div> <br>
+<div><strong>TIP</strong>: If we type Lorem and click on Enter VSCode will paste a paragraph of Lorem Ipsum text.</div>
+<h2>Attribute selectors</h2>
+<p><strong>a[href]{}</strong>: to style the a tags with that attribute.
+<p><strong>a[href="https://www.w3schools.com/cssref/css_websafe_fonts.asp"]{}</strong>: to style only those links.</p>  
+<p><strong>a[href*="colors"]{}</strong>: to style all the a tags with the word colors in its URL.</p>
+<p><strong>a[href$=".asp"]{}</strong>: to style all the a tags whose URL ends with .asp. 
+It's useful for pdf files.</p>
+<h2>The Cascade</h2>
+<p><strong>Inheritance:</strong> HTML elements can inherit some CSS properties that are applied to their parents.
+    Fonts, colors... are inherited, but borders, margins, paddings...But we can inherit those values if we add the value <em>inherit</em> to those attributes in the children. 
+</p>
+<p><strong>Specificity:</strong> we can overrule a parent rule but adding a different value in a child. <em>div p</em> is more specific than <em>p</em>. </p>   
+<p>More info: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade" class="URL2" target="_blank">"Introducing the CSS Cascade" article.</a></p>
+
+
+    </html>

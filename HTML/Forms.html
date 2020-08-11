@@ -1,20 +1,48 @@
 <!DOCTYPE html>
 <html>
+    <!-- Tag to link external CSS file:   <link rel="stylesheet" href="styles.css"> -->
+<style>
+    h1{
+    color: brown;
+    font-size: 30px;
+    background-color: gold;
+    text-decoration: underline;
+    font-family: Arial;
+    text-align: center;
+}
+h2{
+    color: chocolate;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+h3{
+  color: rgb(180, 156, 17);
+}
+a{
+    text-decoration: none; 
+}
+p{
+    line-height: 40px;
+}
+/* to add comments in CSS */
+</style>
 <head><title>HTML FORMS (Lesson 3 by Net Ninja)</title></head>
 <body>
     <h1>HTML Forms</h1>
 <form> 
     <label for="username">Enter username:</label>
     <!--The label tag shows the visible text before the input field-->
-<input type="text" id="username" name="username" placeholder="your username">
+<input type="text" id="username" name="username" placeholder="your username" required>  *
 <!--id name has to be unique. We can add that attibute to any tag-->
 <br> <br>
 <label for="email">Enter your e-mail:</label>
-<input type="email" id="email" name="email" placeholder="your e-mail">
+<input type="email" id="email" name="email" placeholder="your e-mail" required>  *
 <br><br>
 <label for="password">Enter your password:</label>
-<input type="password" id="password" name="password" placeholder="your password">
+<input type="password" id="password" name="password" placeholder="your password" required>  *
 
+<!--Required attribute makes those fields compulsory. Therefore if we try to submit the info 
+while those fields are empty, we will see an error message.-->
 
 <br> <h2>Radio Forms</h2>
 
@@ -69,9 +97,16 @@ The name attribute is very imp for radio forms-->
 <h2>Submit button</h2> 
 <input type="submit" value="Submit the form">
 <!--The value attribute includes the text we will see inside the button-->
+<!--When the user clicks on submit, if the email format is not correct the user will see an error message to amend it -->
+
+<!--When all the info format is correct and the user clicks on Submit, the URL shows all that info
+http://127.0.0.1:5500/Forms.html?username=lutampa&email=assss%40ht.com&password=asdf&gender=female&age=26-50&question=q1&answer=blue&bio=I+am+a+girl
+That info will be send to the server- or JavaScript will use it-->
+
+<h3>More info: <a href="https://www.w3schools.com/html/html_forms.asp">W3school HTML Forms</a></h3>
 </form>
 
-<!-- -->
+
 </body>
 
 
