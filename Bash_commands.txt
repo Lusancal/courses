@@ -5,6 +5,7 @@ ls - list storage
 pwd: print present working directory (where I am = /home/lusancal)
 ls -a : lists all the files including the hiden files (.document)
 ls -l: long list of files with more info about each element
+ls -lh: = info that ls -l but this info is for humans (file size in Kb or Mb instead of bytes)
 
 cd Documents/ : change directory. Move to the folder called Documents
 cd : takes you to the home directory
@@ -37,5 +38,12 @@ apropos time : if we do not know what command ot use to make something
  related to time. It shows lots of differnt commands related to time
 
 man man:  man - an interface to the system reference manuals
+
 +++minute 25+++
+
+CREATE NEW DIRECTORIES & FILES:
+mkdir Test1 Test2 Test3:  we can create more than 1 directory all at one.
+touch existing_file: it updates the date on that file, ex. to backup a file.
+touch new_file_name new_file_name: it creates new files
+CRE
 
