@@ -45,5 +45,12 @@ CREATE NEW DIRECTORIES & FILES:
 mkdir Test1 Test2 Test3:  we can create more than 1 directory all at one.
 touch existing_file: it updates the date on that file, ex. to backup a file.
 touch new_file_name new_file_name: it creates new files
-CRE
+
+TIP: ALtGran + 4= ~ in a Spanish keyboard
+
+COPY FILES:
+
+cp ~/Documentos/NetNinja_CSS_HTML_Crash_Course/about2.html about3.html: to cpoy it in a different folder
+cp about3.html about4.html (copy file in same folder. The copyś name is about4.html)
+
 
