@@ -53,4 +53,28 @@ COPY FILES:
 cp ~/Documentos/NetNinja_CSS_HTML_Crash_Course/about2.html about3.html: to cpoy it in a different folder
 cp about3.html about4.html (copy file in same folder. The copyś name is about4.html)
 
+MOVE & REMOVE FILES AND DIRECTORIES
+mv : move and rename files. If we move a file to another file the file will disappear
+and its content will be added to the 2nd file. Ex. mv lucia.txt  ~/Documents/
 
+rm: remove. No possible to retrieve it -> BE CAREFUL
+rm file1 / rm * (delete all the files of a folder) / rm file* (delete any file that 
+starts with the word file
+rm * does not delete subdirectories -> rm -r foldername; delete subdirectories
+
+rmdir: only removes empty directories ex. rmdir * 
+Ex. rmdir: failed to remove 'dir1': Directory not empty
+    rmdir: failed to remove 'lucia.txt': Not a directory
+
+** TEXT FILES ***
+cat print the content of a file on the screen.
+cat >> file2 : means anything that cat has, add it to file2. If we start typing some text,
+we must end the text with Control+D. Then if we type cat file2 we will see that text inside 
+that file.
+cat file1 file2 : print the content of both files but the files remain the same.
+
+
+more & less
+
+more file1: pages the content of a file
+less file1: more + more things. Not only pages the file, it also allows us to search text..
