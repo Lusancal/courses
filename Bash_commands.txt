@@ -110,7 +110,7 @@ id: shows iformation about my account.
 
 drwxrwxrwx 1 lus lus  512 Aug 17 23:08 dir1
 -rw-rw-rw- 1 lus lus 1297 Aug 19 14:24 listout.txt
--rw-rw-rw- 1 lus lus   40 Aug 19 13:39 lucia.txt
+-rw-rw-rw- 1 lus lus   40 Aug 19 13:39 lu.txt
 
 PERMISSIONS - OWNER (lus) - GROUP (lus) - SIZE - LAST MODIFICATION DATE - FILE NAME
 
