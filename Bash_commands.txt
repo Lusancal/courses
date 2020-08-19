@@ -78,3 +78,53 @@ more & less
 
 more file1: pages the content of a file
 less file1: more + more things. Not only pages the file, it also allows us to search text..
+Q allows us to exit the less command and the file.
+
+### EDIT FILES ###
+nano file1: nano is a very easy and powerful text editor for LINUX.
+Control+O and ENTER to save the changes. if it's a new file name, it'll save that new file.
+Control+X to exit the file.
+cat file1 will show the file with those changes.
+
+Redirection: cat > file2 (adds the new text to an existing file and removes the old text). 
+cat >> file2 (adds text to a file. It does not replace the old text). 
+We type text and Control+D to finish typing.
+
+ls -al / > newfile.text (system will add the list of all the elements in the root directory to
+ a new file called newfile.text
+
+##### USERS #####
+
+sudo: to give administrator privileges to an user temporaley.
+sudo -s: it allows me to be the root user for a limited amount of time without asking for 
+the password each time I use a command. 
+exit : allows me to go back to my user. It's safer to use my user with the sudo command.
+su - otherusername: to move to other user's documents and navegate his/her files. 
+We will need the that user's password to access his/her files.
+
+users: shows who is connected to the system at that time.
+
+id: shows iformation about my account.
+
+### FILE PERMISSIONS ###
+
+drwxrwxrwx 1 lus lus  512 Aug 17 23:08 dir1
+-rw-rw-rw- 1 lus lus 1297 Aug 19 14:24 listout.txt
+-rw-rw-rw- 1 lus lus   40 Aug 19 13:39 lucia.txt
+
+PERMISSIONS - OWNER (lus) - GROUP (lus) - SIZE - LAST MODIFICATION DATE - FILE NAME
+
+1st letter: d (directory) or - (file)
+2nd to 4th letter: user's permissions. rwx
+5th to 7th letter: group's permissions. rwx
+8th to 10th letter: everyone's permissions. rwx
+r = 4 (read it) - W =2 (modify and delete the file) - x = 1(execute that file).
+
+We can modify those permissions.
+chmod +x file1.txt : make the file executable for all the users
+Another option is to use the numbers to make it easier to remember.
+
+chmod 744 file1.txt -> means that the owner has all the permissions and the other groups 
+only had the read permission.
+
+chmod 766 file1.txt -> -rwxrw-rw-
