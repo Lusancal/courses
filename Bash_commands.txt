@@ -128,3 +128,24 @@ chmod 744 file1.txt -> means that the owner has all the permissions and the othe
 only had the read permission.
 
 chmod 766 file1.txt -> -rwxrw-rw-
+
+chmod 700 file1.txt -> -rwx-------
+
+chmod 644 file1.txt -rw-r--r-- = chmod 755 dir1. Without the x permission the other 
+users won't be able to see that folder
+
+Directories and Files manage permissions differently.
+
+HOW TO KILL COMMANDS
+For example: watch free -h -> shows the free memory that we have in the ovmputer and it gets updated
+every few seconds. To kill that process we press Control+C 
+
+If a program that we opened like Firefox is not working properly, we can kill it
+with the command: killall firefox
+If we are not sure about the name we may use: which google-chrome
+then the system will show the name correctly and they we may use the command killall google-chrome
+
+TIP: Control+L: to clean the screen
+
+## CLOSE A BASH TERMINAL ##
+exit 
